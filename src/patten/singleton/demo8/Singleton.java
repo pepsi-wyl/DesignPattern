@@ -30,5 +30,12 @@ public class Singleton implements Serializable {
         return SingletonHolder.INSTANCE;
     }
 
+    /**
+     * 当进行反序列化时，会自动调用将该方法的返回值直接返回
+     */
+    private Object readResolve() {
+        return SingletonHolder.INSTANCE;
+    }
+
 }
 

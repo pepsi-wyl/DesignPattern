@@ -24,6 +24,7 @@ public class T {
         System.out.println(s1.toString() + " " + s2.toString() + " " + (s1 == s2));
     }
 
+    // 从文件中读取对象
     private static Singleton readObjectFromFile() throws Exception {
         //创建对象输入流对象
         ObjectInputStream ois = new ObjectInputStream(new FileInputStream("G:\\a.txt"));

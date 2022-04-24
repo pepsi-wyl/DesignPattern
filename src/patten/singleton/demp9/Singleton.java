@@ -9,10 +9,18 @@ package patten.singleton.demp9;
  * 单例模式 静态内部类
  */
 
-public class Singleton  {
+public class Singleton {
+
+    private static boolean flag = false;
 
     // 私有构造方法
     private Singleton() {
+        synchronized (Singleton.class){
+            // flag为true 表明已经创建过对象
+            if (flag) throw new RuntimeException("单例不能创建多个对象");
+            // 否则则进行创建对象
+            flag = true;
+        }
     }
 
     // 静态内部类
