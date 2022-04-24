@@ -1,4 +1,4 @@
-package patten.factory.simple;
+package patten.factory.simple_factory;
 
 /**
  * @author by pepsi-wyl
