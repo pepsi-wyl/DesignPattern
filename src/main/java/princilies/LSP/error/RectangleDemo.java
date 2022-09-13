@@ -11,14 +11,14 @@ public class RectangleDemo {
         Rectangle rectangle = new Rectangle();
         rectangle.setLength(20);
         rectangle.setWidth(10);
-        resize(rectangle);
+        resize(rectangle);               // 拓展宽度
         printLengthAndWidth(rectangle);
 
         System.out.println("============");
 
         Square square = new Square();
         square.setLength(10);
-        resize(square);
+        resize(square);                  // 拓展看睹
         printLengthAndWidth(square);
 
     }

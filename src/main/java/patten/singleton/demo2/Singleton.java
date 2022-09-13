@@ -19,7 +19,7 @@ public class Singleton {
     // 声明Singleton类型的变量
     private static Singleton instance;
 
-    // 静态代码块种进行赋值
+    // 静态代码块中进行赋值
     static {
         instance = new Singleton();
     }

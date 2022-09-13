@@ -12,6 +12,7 @@ public class SouGouInput {
 
     private final AbstractSkin abstractSkin;
 
+    // 构造方法
     public SouGouInput(AbstractSkin abstractSkin) {
         this.abstractSkin = abstractSkin;
     }

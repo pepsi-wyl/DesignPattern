@@ -16,16 +16,16 @@ public class Singleton {
     }
 
     // 声明Singleton类型的变量 volatile 关键字
-    private static volatile  Singleton instance;
+    private static volatile Singleton instance;
 
     // 提供一个公共的访问方式，供外界获取
-    public static synchronized Singleton getInstance() {
+    public static Singleton getInstance() {
         // 第一次判断不为null  不需要抢占锁，直接返回资源
         if (instance == null) {
             // 加锁
-            synchronized (Singleton.class){
+            synchronized (Singleton.class) {
                 // 抢到锁之后再次判断是否为null
-                if (instance==null)instance = new Singleton();
+                if (instance == null) instance = new Singleton();
             }
         }
         return instance;

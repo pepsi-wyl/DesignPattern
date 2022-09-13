@@ -27,9 +27,11 @@ public class T {
     // 从文件中读取对象
     private static Singleton readObjectFromFile() throws Exception {
         //创建对象输入流对象
-        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("G:\\a.txt"));
+        ObjectInputStream ois = new ObjectInputStream(new FileInputStream("a.txt"));
         //第一个读取Singleton对象
         Singleton instance = (Singleton) ois.readObject();
+        // 关闭输入流
+        ois.close();
         return instance;
     }
 
@@ -38,9 +40,11 @@ public class T {
         // 获取Singleton类的对象
         Singleton instance = Singleton.getInstance();
         // 创建对象输出流
-        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("G:\\a.txt"));
+        ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("a.txt"));
         // 将instance对象写出到文件中
         oos.writeObject(instance);
+        // 关闭输出流
+        oos.close();
     }
 
 }

@@ -13,7 +13,7 @@ public class T {
         Class<Singleton> clazz = Singleton.class;
         // 获取构造器
         Constructor<Singleton> constructor = clazz.getDeclaredConstructor();
-        // 取消访问检查
+        // 取消访问检查  private
         constructor.setAccessible(true);
 
         // 获取实例对象

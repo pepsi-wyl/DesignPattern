@@ -6,12 +6,14 @@ package princilies.OCP;
  */
 public class Client {
     public static void main(String[] args) {
-
+        // 皮肤对象
         DefaultSkin defaultSkin = new DefaultSkin();
         NewSkin newSkin = new NewSkin();
 
+        // 输入法对象
         SouGouInput input = new SouGouInput(newSkin);
-        // 显示皮肤
+
+        // 输入法显示皮肤
         input.display();
     }
 }
