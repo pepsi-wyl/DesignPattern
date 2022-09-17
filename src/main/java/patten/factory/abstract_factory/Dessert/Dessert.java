@@ -5,10 +5,7 @@ package patten.factory.abstract_factory.Dessert;
  * @date 2022-04-24 17:36
  */
 
-/**
- * 甜品抽象类
- */
-
+// 抽象甜品类
 public abstract class Dessert {
     // 抽象方法
     public abstract String getName();

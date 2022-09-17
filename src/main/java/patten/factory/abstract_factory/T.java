@@ -11,10 +11,14 @@ import patten.factory.abstract_factory.factory.AmericanDessertFactory;
 
 public class T {
     public static void main(String[] args) {
-//        ItalyDessertFactory factory = new ItalyDessertFactory();
+        // 创建工厂
+        // ItalyDessertFactory factory = new ItalyDessertFactory();
         AmericanDessertFactory factory = new AmericanDessertFactory();
+
+        // 工厂生产咖啡和甜点
         Coffee coffee = factory.createCoffee();
         Dessert dessert = factory.createDessert();
+
         System.out.println(coffee.getName());
         System.out.println(dessert.getName());
     }

@@ -5,6 +5,7 @@ package patten.factory.config_factory;
  * @date 2022-04-24 15:52
  */
 
+// 美式咖啡
 public class AmericanCoffee extends Coffee {
     @Override
     public String getName() {

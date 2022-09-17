@@ -9,6 +9,8 @@ package patten.factory.factory_method;
  * 咖啡类 抽象类
  */
 
+
+// 咖啡抽象类
 public abstract class Coffee {
 
     // 抽象方法

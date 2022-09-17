@@ -5,10 +5,7 @@ package patten.factory.abstract_factory.coffee;
  * @date 2022-04-24 15:40
  */
 
-/**
- * 咖啡类 抽象类
- */
-
+// 抽象咖啡类
 public abstract class Coffee {
 
     // 抽象方法

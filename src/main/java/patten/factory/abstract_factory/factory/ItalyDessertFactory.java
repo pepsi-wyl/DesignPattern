@@ -12,15 +12,15 @@ import patten.factory.abstract_factory.Dessert.Trimisu;
 
 // 意大利风味甜点工厂
 public class ItalyDessertFactory implements DessertFactory {
-
+    // 拿铁咖啡
     @Override
     public Coffee createCoffee() {
         return new LatteCoffee();
     }
 
+    // 提拉米苏
     @Override
     public Dessert createDessert() {
         return new Trimisu();
     }
-
 }

@@ -10,7 +10,10 @@ package patten.factory.simple_factory;
  */
 
 public class SimpleCoffeeFactory {
+
+    // 生产咖啡方法
     public Coffee createCoffee(String type) {
+        // 咖啡对象
         Coffee coffee = null;
         switch (type) {
             case "american":

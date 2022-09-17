@@ -7,8 +7,7 @@ package patten.factory.simple_factory;
 
 public class CoffeeStore {
     public Coffee orderCoffee(String type) {
-        SimpleCoffeeFactory simpleCoffeeFactory = new SimpleCoffeeFactory();
-        Coffee coffee = simpleCoffeeFactory.createCoffee(type);
+        Coffee coffee = new SimpleCoffeeFactory().createCoffee(type);
         return coffee;
     }
 }
