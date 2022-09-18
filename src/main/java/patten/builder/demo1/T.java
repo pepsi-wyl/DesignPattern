@@ -6,11 +6,8 @@ package patten.builder.demo1;
  */
 public class T {
     public static void main(String[] args) {
-        // 获得指挥者
-        Director director = new Director(new MobileBuilder());
-        // 构建自行车
-        Bike bike = director.construct();
-        // 验证
+
+        Bike bike = new Director(new MobileBuilder()).construct();
         System.out.println(bike.getFrame());
         System.out.println(bike.getSeat());
 

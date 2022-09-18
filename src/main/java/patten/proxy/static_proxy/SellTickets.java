@@ -8,6 +8,7 @@ package patten.proxy.static_proxy;
 // 买票接口
 public interface SellTickets {
 
+    // 买票方法
     void sell();
 
 }

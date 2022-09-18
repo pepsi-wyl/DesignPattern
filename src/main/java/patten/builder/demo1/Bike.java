@@ -5,7 +5,9 @@ package patten.builder.demo1;
  * @date 2022-04-30 16:12
  */
 
+// 自行车
 public class Bike {
+
     // 车架
     private String frame;
     // 车座

@@ -7,7 +7,6 @@ package patten.proxy.static_proxy;
 
 // 代售点
 public class ProxyPoint implements SellTickets {
-
     // 火车站
     private TrainStation trainStation = new TrainStation();
 
@@ -15,7 +14,6 @@ public class ProxyPoint implements SellTickets {
     @Override
     public void sell() {
         System.out.println("代理点收取一些服务费用");
-        trainStation.sell();
+        trainStation.sell(); // 调用火车站买票的方法
     }
-
 }

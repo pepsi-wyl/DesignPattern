@@ -5,7 +5,7 @@ package patten.adapter.object_adapter;
  * @date 2022-05-01 15:41
  */
 
-// 适配者类的接口
+// 适配者类接口
 public interface TFCard {
     // 从TF卡读取数据
     String readTF();

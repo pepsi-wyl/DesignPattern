@@ -7,11 +7,9 @@ package patten.proxy.jdk_proxy;
 
 // 火车站
 public class TrainStation implements SellTickets {
-
     // 卖票
     @Override
     public void sell() {
         System.out.println("火车站买票");
     }
-
 }

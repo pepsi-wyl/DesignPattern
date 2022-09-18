@@ -14,10 +14,10 @@ public class Phone {
     private String mainboard;
 
     private Phone(Builder builder) {
-        cpu = builder.cpu;
-        screen = builder.screen;
-        memory = builder.memory;
-        mainboard = builder.mainboard;
+            cpu = builder.cpu;
+            screen = builder.screen;
+            memory = builder.memory;
+            mainboard = builder.mainboard;
     }
 
     public static final class Builder {

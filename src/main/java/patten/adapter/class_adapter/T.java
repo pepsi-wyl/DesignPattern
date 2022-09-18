@@ -5,6 +5,7 @@ package patten.adapter.class_adapter;
  * @date 2022-05-01 15:50
  */
 
+// 测试类
 public class T {
     public static void main(String[] args) {
         Computer computer = new Computer();
